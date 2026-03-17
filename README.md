@@ -1,4 +1,4 @@
-# Clinical Data Engineering Pipeline
+# Clinical Data Engineering ETL Pipeline
 
 I built a full-stack ETL data pipeline for ingesting, validating, and analyzing clinical healthcare datasets. The system uses a FastAPI backend for data processing and a Streamlit frontend for interactive exploration and visualization.
 Users can upload CSV datasets, automatically clean and validate the data, compute summary statistics, and generate charts to analyze medical conditions and billing patterns.
