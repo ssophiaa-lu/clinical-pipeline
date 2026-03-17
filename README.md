@@ -39,11 +39,37 @@ Users can upload CSV datasets, automatically clean and validate the data, comput
 ## Running the Project
 ### Install Dependencies
 ```pip install fastapi uvicorn pandas streamlit altair requests```
-### Start the Backend
-```uvicorn main:app --reload```
+## Running the Project
 
-Backend runs at:
+This project has two components:
+
+- **FastAPI backend** for data processing
+- **Streamlit frontend** for visualization
+
+You will run them in **two separate terminals**.
+
+---
+
+### 1. Start the Backend (FastAPI)
+
+Open a terminal and run:
+
+```
+cd clinical-pipeline/backend
+uvicorn main:app --reload
+```
+
+The API server will run at:
+
 http://127.0.0.1:8000
+### 2. Start the Frontend (Streamlit)
 
-Start the Frontend
-```streamlit run app.py```
+Open a new terminal tab and run:
+```
+cd clinical-pipeline/frontend
+streamlit run app.py
+```
+
+The Streamlit app will run at:
+
+http://localhost:8501
