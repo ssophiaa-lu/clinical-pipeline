@@ -3,6 +3,17 @@
 I built a full-stack ETL data pipeline for ingesting, validating, and analyzing clinical healthcare datasets. The system uses a FastAPI backend for data processing and a Streamlit frontend for interactive exploration and visualization.
 Users can upload CSV datasets, automatically clean and validate the data, compute summary statistics, and generate charts to analyze medical conditions and billing patterns.
 
+## DEMO 
+
+<div>
+    <a href="https://www.loom.com/share/4a8b0166a58d4d85afb6ba6b4c37ccf9">
+      <p>Clinical Data Engineering ETL Pipeline - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/4a8b0166a58d4d85afb6ba6b4c37ccf9">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/4a8b0166a58d4d85afb6ba6b4c37ccf9-ef96d0534aceb8ca-full-play.gif#t=0.1">
+    </a>
+  </div>
+
 ## Tech Stack
 ### Backend
 - Python
