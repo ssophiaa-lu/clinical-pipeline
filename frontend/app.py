@@ -2,9 +2,11 @@ import streamlit as st
 import requests
 import pandas as pd
 import altair as alt
-
+import os
 # Base URL of the FastAPI backend the frontend communicates with
-API_BASE_DEFAULT = "http://127.0.0.1:8000"
+# Lets code behave differently depending on where it’s running
+# If there's an env var called API_BASE, use it; otherwise, use the default 
+API_BASE_DEFAULT = os.getenv("API_BASE", "http://127.0.0.1:8000")
 
 # Maps human-readable chart names in the UI to specific backend API routes
 ENDPOINTS = {
@@ -148,7 +150,7 @@ if file is not None:
 
     # Send file to preview endpoint which calculates dataset summary statistics
     response = requests.post(
-        "http://127.0.0.1:8000/upload/preview",
+        f"{API_BASE_DEFAULT}/upload/preview",
         files={"file": file}
     )
 

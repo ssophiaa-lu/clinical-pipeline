@@ -47,7 +47,18 @@ Users can upload CSV datasets, automatically clean and validate the data, comput
 - Summary statistics and dataset preview are generated
 - Interactive charts visualize patient conditions and billing trends
 
-## Running the Project
+
+## Running the Project (Docker)
+
+### Prerequisites
+- Install Docker
+- Install Docker Compose (included with Docker Desktop)
+
+### Run the Full Application
+```bash
+docker compose up --build
+```
+## Running the Project (without Docker)
 ### Install Dependencies
 ```pip install fastapi uvicorn pandas streamlit altair requests```
 ## Running the Project
